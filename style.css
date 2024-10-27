@@ -1,0 +1,225 @@
+/* Reset default margin, padding, border, and outline for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Body styling */
+body {
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-image: url(images/background.jpg); /* Background image */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment: fixed; /* Fixed background scrolling */
+    background-position: center;
+}
+
+/* Main container styling */
+.container {
+    position: relative; /* Allows absolute positioning of child elements */
+    width: 395px; /* Fixed width */
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 28px 32px; /* Padding around the content */
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 18px; 
+    font-family: 'Roboto', sans-serif; /* Font family */
+    transition: 0.6s ease-out; /* Smooth transition for state changes */
+}
+
+/* Search box styling */
+.search-box {
+    width: 100%; /* Full width */
+    height: 45px; /* Fixed height */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Input field styling */
+.search-box input {
+    color: white; /* Text color */
+    width: 90%; /* Width relative to parent */
+    font-size: 24px; /* Font size */
+    font-weight: 500; /* Font weight */
+    margin: 10px; /* Margin around input */
+    text-transform: uppercase; /* Uppercase text */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-radius: 18px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    text-align: center; 
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+/* Placeholder styling */
+.search-box input::placeholder {
+    font-size: 20px; /* Placeholder font size */
+    font-weight: 500; /* Placeholder font weight */
+    color: whitesmoke; /* Placeholder text color */
+    text-transform: capitalize; /* Capitalize placeholder text */
+    text-align: center; 
+}
+
+/* Button styling */
+.search-box button {
+    cursor: pointer; /* Change cursor on hover */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    color: rgb(57, 99, 126); /* Text color */
+    background: lightskyblue; /* Button background color */
+    border-radius: 50%; /* Circular button */
+    font-size: 22px; /* Font size */
+    transition: 0.4s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.search-box button:hover {
+    color: blue; /* Change text color on hover */
+    background: rgba(0, 0, 0, 0.5); /* Change background on hover */
+}
+
+/* Location icon styling */
+.search-box i {
+    position: absolute; /* Positioning */
+    color: lightskyblue; /* Icon color */
+    font-size: 43px; /* Icon size */
+    margin-bottom: 10px;
+}
+
+/* Weather box styling */
+.weather-box {
+    text-align: center; /* Center text */
+}
+
+/* Weather image styling */
+.weather-box img {
+    width: 60%; /* Responsive image size */
+    margin-top: 30px; /* Top margin */
+}
+
+/* Temperature text styling */
+.weather-box .temperature {
+    position: relative; /* Allows positioning of child elements */
+    color: #dff6ff; /* Text color */
+    font-size: 4rem; /* Font size */
+    font-weight: 800; /* Font weight */
+    margin-top: 30px; /* Top margin */
+    margin-left: -16px; /* Left margin adjustment */
+}
+
+/* Temperature unit styling */
+.weather-box .temperature span {
+    position: absolute; /* Positioning */
+    margin-left: 4px; /* Left margin */
+    font-size: 1.5rem; /* Font size */
+}
+
+/* Weather description styling */
+.weather-box .description {
+    color: gainsboro; /* Text color */
+    font-size: 22px; /* Font size */
+    font-weight: 500; /* Font weight */
+    text-transform: capitalize; /* Capitalize text */
+}
+
+/* Weather details section styling */
+.weather-details {
+    width: 100%; /* Full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    margin-top: 30px; /* Top margin */
+}
+
+/* Individual detail box styling */
+.weather-details .humidity, .weather-details .wind {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    width: 50%; /* Fixed width for each detail */
+    height: 100px; /* Fixed height */
+}
+
+/* Humidity box specific styling */
+.weather-details .humidity {
+    padding-left: 20px; /* Left padding */
+    justify-content: flex-start; /* Align left */
+}
+
+/* Wind box specific styling */
+.weather-details .wind {
+    padding-right: 20px; /* Right padding */
+    justify-content: flex-end; /* Align right */
+}
+
+/* Icon styling in weather details */
+.weather-details i {
+    color: burlywood; /* Icon color */
+    font-size: 26px; /* Icon size */
+    margin-right: 10px; /* Right margin */
+    margin-top: 6px; /* Top margin */
+}
+
+/* Value span styling in weather details */
+.weather-details span {
+    color: #dff6ff; /* Text color */
+    font-size: 22px; /* Font size */
+    font-weight: 500; /* Font weight */
+}
+
+/* Paragraph styling in weather details */
+.weather-details p {
+    color: #dff6ff; /* Text color */
+    font-size: 14px; /* Font size */
+    font-weight: 500; /* Font weight */
+}
+
+/* Not found section styling */
+.not-found {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    margin-top: 50px; /* Top margin */
+    scale: 0; /* Initial scale for animation */
+    opacity: 0; /* Initial opacity for animation */
+    display: none; /* Initially hidden */
+}
+
+/* Image in not found section */
+.not-found img {
+    width: 70%; /* Responsive image size */
+}
+
+/* Paragraph styling in not found section */
+.not-found p {
+    color: #dff6ff; /* Text color */
+    font-size: 23px; /* Font size */
+    font-weight: 500; /* Font weight */
+}
+
+/* Initial state for weather box and details */
+.weather-box, .weather-details {
+    scale: 0; /* Initial scale for animation */
+    opacity: 0; /* Initial opacity for animation */
+}
+
+/* Fade in animation class */
+.fadeIn {
+    animation: 0.5s fadeIn forwards; /* Animation for fade in effect */
+    animation-delay: 0.5s; /* Delay before starting animation */
+}
+
+/* Keyframes for fade in animation */
+@keyframes fadeIn {
+    to {
+        scale: 1; /* End scale */
+        opacity: 1; /* End opacity */
+    }
+}
+
+
